@@ -1,0 +1,40 @@
+header {
+  background-color: rgb(159, 29, 98);
+  color: aliceblue;
+  text-align: center;
+  padding: 1px; /* Adiciona espaçamento interno */
+  width: 100%;
+  box-sizing: border-box; /* Evita que padding quebre o layout */
+}
+nav {
+  text-align: center;
+  gap: 20px;
+}
+.imagem {
+  border: 1px solid rgb(159, 29, 98);
+}
+
+strong {
+  color: rgb(159, 29, 98);
+}
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+}
