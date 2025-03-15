@@ -97,3 +97,7 @@ video {
   max-width: 100%;
   height: auto;
 }
+
+strong {
+  color: rgb(159, 29, 98);
+}
