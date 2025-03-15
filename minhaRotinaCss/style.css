@@ -13,6 +13,29 @@ header {
   border-radius: 10px;
 }
 
+/* Estilizando o conteúdo */
+div {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Estilo para os links */
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgb(145, 28, 90);
+  text-decoration: underline;
+}
+
 /* Estilizando a Navegação */
 nav {
   margin: 20px auto;
@@ -32,35 +55,15 @@ nav a {
 }
 
 nav a:hover {
+  color: aliceblue;
   background-color: rgb(175, 33, 109);
-}
-
-/* Estilizando o conteúdo */
-div {
-  max-width: 600px;
-  margin: 20px auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
-
-/* Estilo para os links */
-a {
-  color: rgb(145, 28, 90);
   text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 .audio {
   display: flex;
-  justify-content: center; /* Centraliza os itens no meio */
-  align-items: center; /* Alinha verticalmente */
+  justify-content: center;
+  align-items: center;
   box-shadow: none;
   margin-top: -10px;
   padding: 5px;
@@ -68,6 +71,7 @@ a:hover {
 
 img {
   border: 5px solid rgb(159, 29, 98);
+  border-radius: 10px;
   max-width: 289px;
   height: 278px;
 }
