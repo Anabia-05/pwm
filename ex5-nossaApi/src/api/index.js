@@ -43,23 +43,45 @@ export async function addTarefa(novaTarefa) {
   return null;
 }
 
-export async function attTarefa(tarefaAtualizada) {
+export async function updateTarefas(tarefaAtualizada) {
+  delete tarefaAtualizada.createdAt;
+  delete tarefaAtualizada.updatedAt;
   try {
     const response = await axios.put(
-      urlTarefa + "/" + tarefaAtualizada.objectID,
+      urlTarefa + "/" + tarefaAtualizada.objectId,
       tarefaAtualizada,
       {
         headers: headersJson,
       }
     );
-    if (response.status === 201) {
+    if (response.status === 200) {
       return { ...tarefaAtualizada, ...response.data };
     } else {
       console.log("status:", response.status);
       console.log("statusText:", response.statusText);
     }
   } catch (err) {
-    console.log("addTarefas err:", err);
+    console.log("updateTarefas err:", err);
+  }
+  return null;
+}
+
+export async function deleteTarefa(tarefaDeletada) {
+  try {
+    const response = await axios.delete(
+      urlTarefa + "/" + tarefaDeletada.objectId,
+      {
+        headers: headers,
+      }
+    );
+    if (response.status === 200) {
+      return response.data;
+    } else {
+      console.log("status:", response.status);
+      console.log("statusText:", response.statusText);
+    }
+  } catch (err) {
+    console.log("updateTarefas err:", err);
   }
   return null;
 }

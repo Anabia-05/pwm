@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Cabecalho } from "./components/Cabecalho";
-import { addTarefa, getTarefas } from "./api";
+import { addTarefa, deleteTarefa, getTarefas, updateTarefas } from "./api";
 import { Tarefa } from "./components/Tarefa";
 // import './App.css'
 
@@ -43,7 +43,25 @@ function App() {
       </p>
       <ul>
         {tarefas.map((tarefa) => (
-          <Tarefa key={tarefa.objectId} tarefa={tarefa} />
+          <Tarefa
+            key={tarefa.objectId}
+            tarefa={tarefa}
+            onUpdateClick={async () => {
+              tarefa.concluida = !tarefa.concluida;
+              const tarefaAtualizada = await updateTarefas(tarefa);
+              console.log("tarefaAtualizada", tarefaAtualizada);
+              if (tarefaAtualizada) {
+                carregarTarefas();
+              }
+            }}
+            onDeleteClick={async () => {
+              const tarefaDeletada = await deleteTarefa(tarefa);
+              console.log("tarefaDeletada", tarefaDeletada);
+              if (tarefaDeletada) {
+                carregarTarefas();
+              }
+            }}
+          />
         ))}
       </ul>
     </>
