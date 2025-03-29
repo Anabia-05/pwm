@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Cabecalho } from "./components/Cabecalho";
 import { addTarefa, deleteTarefa, getTarefas, updateTarefas } from "./api";
 import { Tarefa } from "./components/Tarefa";
-// import './App.css'
+import "./App.css";
 
 function App() {
   const [tarefas, setTarefas] = useState([]);
