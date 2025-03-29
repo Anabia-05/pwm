@@ -1,63 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfólio | Ana Beatriz Romero</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <img class="imagem" src="../dados/eu.jpeg" alt="Foto de Ana Beatriz Romero" />
-        <h1>Ana Beatriz Romero</h1>
-        <p>Estudante de Ciência da Computação</p>
+      <h1>Ana Beatriz Romero</h1>
+      <nav>
+        <ul class="menulist">
+          <li class="menuitem"><a href="#sobre-mim">Sobre</a></li>
+          <li class="menuitem"><a href="#experiencia">Experiência</a></li>
+          <li class="menuitem"><a href="#meus-projetos">Projetos</a></li>
+          <li class="menuitem"><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
     </header>
-    
-    <section>
-        <h2>Sobre Mim</h2>
-        <p>Me chamo Ana Beatriz Romero e atualmente estudo Ciência da Computação na Universidade Católica de Pernambuco (Unicap). Muitos dos projetos que desenvolvi foram para a faculdade, mas, além disso, também faço parte de um grupo de pesquisa.</p>
+
+    <section id="sobre-mim">
+      <img
+        class="imagem"
+        src="../dados/eu.jpeg"
+        alt="Foto de Ana Beatriz Romero"
+      />
+      <h2>Sobre Mim</h2>
+      <p>
+        Me chamo Ana Beatriz Romero e atualmente estudo Ciência da Computação na
+        Universidade Católica de Pernambuco (Unicap). Muitos dos projetos que
+        desenvolvi foram para a faculdade, mas, além disso, também faço parte de
+        um grupo de pesquisa.
+      </p>
     </section>
-    
-    <section>
-        <h2>Experiência de Trabalho</h2>
-        <article>
-            <h3>Pesquisadora de Graduação</h3>
-            <p><strong>Set 2024 - Presente</strong></p>
-            <p>Participo do grupo de pesquisa GPRT, onde aprofundei meus conhecimentos em Machine Learning, Ciência de Dados e Redes. Atuei no desenvolvimento de software para solucionar problemas de desempenho de redes, com foco na análise de dados, modelagem utilizando aprendizado de máquina e implementação de ferramentas para otimização. Adquiri habilidades práticas em predição, classificação e utilização de bibliotecas como NumPy, Pandas e Scikit-Learn.</p>
-        </article>
+
+    <section id="exeperiencia">
+      <h2>Experiência de Trabalho</h2>
+      <article>
+        <h3>Pesquisadora de Graduação</h3>
+        <p><strong>Set 2024 - Presente</strong></p>
+        <p>
+          Participo do grupo de pesquisa GPRT, onde aprofundei meus
+          conhecimentos em Machine Learning, Ciência de Dados e Redes. Atuei no
+          desenvolvimento de software para solucionar problemas de desempenho de
+          redes, com foco na análise de dados, modelagem utilizando aprendizado
+          de máquina e implementação de ferramentas para otimização. Adquiri
+          habilidades práticas em predição, classificação e utilização de
+          bibliotecas como NumPy, Pandas e Scikit-Learn.
+        </p>
+      </article>
     </section>
-    
-    <section>
-        <h2>Meus Projetos</h2>
-        <ul>
-            <li>
-                <strong>Projeto em Banco de Dados</strong>
-                <p>Sistema com banco de dados para uma plataforma de gerenciamento de arquivos. O sistema oferece uma interface para upload e gerenciamento de arquivos, com funcionalidades como criação, atualização, remoção e visualização de arquivos. Além disso, há controle de acesso, versionamento e suporte ao histórico de operações, com suporte para diferentes papéis e permissões.</p>                
-                <a href="https://github.com/Anabia-05/ProjetoBD" target="_blank">github.com/Anabia-05/ProjetoBD</a><br>
-            </li>
-            
-            <li>
-                <strong>Desenvolvimento de Árvore Red-Black</strong>
-                <p>Implementação de uma Árvore Red-Black desenvolvida em Java.Consiste em  uma estrutura de dados auto-balanceada baseada em árvore binária de busca.
-                    Ela garante eficiência em operações de busca, inserção e remoção, mantendo o tempo de execução em O(log n).</p>
-                <a href="https://github.com/Anabia-05/Red-Black-Tree" target="_blank">github.com/Anabia-05/Red-Black-Tree</a><br>
-            </li>
-            <li>
-                <strong>Projeto de Árvore-B</strong> 
-                <p>Implementação de uma Árvore B desenvolvida em Java. Uma estrutura de dados auto-balanceada amplamente utilizada para organizar e gerenciar grandes volumes de dados.
-                    Ela é especialmente eficiente em sistemas de banco de dados e sistemas de arquivos devido à sua capacidade de minimizar o número de acessos ao disco.
-                    
-                    </p>
-                <a href="https://github.com/Anabia-05/Arvore-B" target="_blank">github.com/Anabia-05/Arvore-B</a><br>
-            </li>
-        </ul>
+
+    <section id="meus-projetos">
+      <h2>Meus Projetos</h2>
+      <ul>
+        <li>
+          <strong>Projeto em Banco de Dados</strong>
+          <p>
+            Sistema com banco de dados para uma plataforma de gerenciamento de
+            arquivos. O sistema oferece uma interface para upload e
+            gerenciamento de arquivos, com funcionalidades como criação,
+            atualização, remoção e visualização de arquivos. Além disso, há
+            controle de acesso, versionamento e suporte ao histórico de
+            operações, com suporte para diferentes papéis e permissões.
+          </p>
+          <a href="https://github.com/Anabia-05/ProjetoBD" target="_blank"
+            >github.com/Anabia-05/ProjetoBD</a
+          ><br />
+        </li>
+
+        <li>
+          <strong>Desenvolvimento de Árvore Red-Black</strong>
+          <p>
+            Implementação de uma Árvore Red-Black desenvolvida em Java.Consiste
+            em uma estrutura de dados auto-balanceada baseada em árvore binária
+            de busca. Ela garante eficiência em operações de busca, inserção e
+            remoção, mantendo o tempo de execução em O(log n).
+          </p>
+          <a href="https://github.com/Anabia-05/Red-Black-Tree" target="_blank"
+            >github.com/Anabia-05/Red-Black-Tree</a
+          ><br />
+        </li>
+        <li>
+          <strong>Projeto de Árvore-B</strong>
+          <p>
+            Implementação de uma Árvore B desenvolvida em Java. Uma estrutura de
+            dados auto-balanceada amplamente utilizada para organizar e
+            gerenciar grandes volumes de dados. Ela é especialmente eficiente em
+            sistemas de banco de dados e sistemas de arquivos devido à sua
+            capacidade de minimizar o número de acessos ao disco.
+          </p>
+          <a href="https://github.com/Anabia-05/Arvore-B" target="_blank"
+            >github.com/Anabia-05/Arvore-B</a
+          ><br />
+        </li>
+      </ul>
     </section>
-    
-    <section>
-        <h2>Onde me encontrar</h2>
-        <ul>
-            <li>GitHub: <a href="https://github.com/Anabia-05" target="_blank">github.com/Anabia-05</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/ana-beatriz-romero-a15564274/" target="_blank">linkedin.com/in/ana-beatriz-romero</a></li>
-        </ul>
+
+    <section id="contato">
+      <h2>Onde me encontrar</h2>
+      <ul>
+        <li>
+          GitHub:
+          <a href="https://github.com/Anabia-05" target="_blank"
+            >github.com/Anabia-05</a
+          >
+        </li>
+        <li>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/ana-beatriz-romero-a15564274/"
+            target="_blank"
+            >linkedin.com/in/ana-beatriz-romero</a
+          >
+        </li>
+      </ul>
     </section>
-</body>
+  </body>
 </html>
