@@ -57,3 +57,52 @@ section {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
+
+h2 {
+  text-align: left;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  text-align: justify;
+  max-width: 700px;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+a:hover {
+  color: rgb(145, 28, 90);
+  text-decoration: underline;
+}
+
+#sobre-mim {
+  max-width: 1100px;
+  margin: 80px auto; /* Adiciona espaçamento para não ficar grudado no header */
+  padding: 20px;
+  text-align: center;
+}
+
+#sobre-mim h2 {
+  text-align: center;
+}
+
+.sobre-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.sobre-conteudo img {
+  width: 150px;
+  height: auto;
+  border-radius: 25%;
+}
