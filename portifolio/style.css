@@ -4,6 +4,11 @@ body {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  background-color: rgb(246, 227, 234);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -56,6 +61,7 @@ section {
   border-radius: 8px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
+  background-color: aliceblue;
 }
 
 h2 {
@@ -112,14 +118,19 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
   flex-direction: row;
+  gap: 20px;
 }
 
 .sobre-conteudo img {
   width: 200px;
-  height: auto;
-  border-radius: 25%;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.texto {
+  max-width: 400px;
 }
 
 .dark-mode {
