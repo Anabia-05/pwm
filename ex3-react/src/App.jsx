@@ -17,11 +17,11 @@ function App() {
   }
 
   function handleBtIncrementarValorClick() {
-    setContador(count + incremento);
+    setCount(count + incremento);
   }
 
-  function handleBtIncrementarChange() {
-    ssetIncremento(parseInt(evt.target.value));
+  function handleBtIncrementarChange(evt) {
+    setIncremento(parseInt(evt.target.value));
   }
   return (
     <>

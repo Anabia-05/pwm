@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(246, 227, 234);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgb(175, 33, 109);
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+}
+
+#container-jogo {
+  background: white;
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+input.interativo {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  text-align: center;
+}
+
+/* Estilos básicos para todos os botões */
+button.interativo {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Cor específica do botão "Enviar Palpite" */
+#buttonIJ {
+  background-color: #6f03c7;
+
+  color: white;
+}
+
+#buttonIJ:hover {
+  background-color: #520095;
+}
+
+/* Cor específica do botão "Jogue Novamente" */
+#buttonRJ {
+  background-color: #ef5052;
+  color: white;
+}
+
+#buttonRJ:hover {
+  background-color: #ea3c3f;
+}
+
+#listaTentativas {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.tentativaItem {
+  background: #ddd;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  font-size: 16px;
+}
