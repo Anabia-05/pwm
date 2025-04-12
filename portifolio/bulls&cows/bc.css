@@ -58,11 +58,20 @@ button.interativo {
 
 /* Cor específica do botão "Jogue Novamente" */
 #buttonRJ {
-  background-color: #ef5052;
+  background-color: #e72988;
   color: white;
 }
 
 #buttonRJ:hover {
+  background-color: #e40574;
+}
+
+#buttonMS {
+  background-color: #ef5052;
+  color: white;
+}
+
+#buttonMS:hover {
   background-color: #ea3c3f;
 }
 

@@ -65,6 +65,9 @@ function iniciarJogo() {
     reiniciarJogo();
   }
 }
+function exibirSenha() {
+  alert("A senha secreta é: " + senha);
+}
 
 function exibirTentativas() {
   const listaTentativas = document.getElementById("listaTentativas");
